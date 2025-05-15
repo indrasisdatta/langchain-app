@@ -1,3 +1,4 @@
+pydantic
 langchain
 ipykernel
 python-dotenv
@@ -14,3 +15,10 @@ sentence_transformers
 langchain-huggingface
 faiss-cpu
 langchain_ollama
+streamlit
+langchain_groq
+langchain-core
+fastapi
+uvicorn
+langserve
+sse_starlette
