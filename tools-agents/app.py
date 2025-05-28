@@ -7,8 +7,9 @@ from langchain.callbacks import StreamlitCallbackHandler
 
 import os 
 from dotenv import load_dotenv
-load_dotenv()   
+load_dotenv(override=True)   
 api_key = os.getenv("GROQ_API_KEY")
+print(api_key)
 
 # Disable SSL cert on local 
 os.environ.pop("SSL_CERT_FILE", None)
