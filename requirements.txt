@@ -3,6 +3,7 @@ langchain
 ipykernel
 python-dotenv
 langchain-community
+langchain_community
 pypdf
 bs4
 arxiv
@@ -37,3 +38,6 @@ datasets
 tiktoken
 PyPDF2
 gradio
+pinecone 
+pinecone-text 
+pinecone-notebooks
