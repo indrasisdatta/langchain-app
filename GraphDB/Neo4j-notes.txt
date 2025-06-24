@@ -1,0 +1,33 @@
+
+CREATE(`Elon Musk`:CEO) 
+
+CREATE (Elon:CEO{name: "Elon Musk", YOB: 1967, POB: "SA"})
+
+MATCH(n) return n
+
+CREATE (Tesla:Company {name: "Tesla", founded: 2003})
+
+CREATE(Elon)-[r:CEO]->(Tesla)
+
+
+// Create relationship between nodes - Person and Movie
+
+CREATE(p:Person {name: "Tom Hanks", YOB: 1956})
+CREATE(m:Movie {title: "Forrest Gump", released: 1994})
+
+MATCH(p:Person {name: "Tom Hanks"}), (m:Movie {title: "Forrest Gump"})
+CREATE(p)-[:ACTED_IN]->(m)
+
+// View relationships and nodes 
+MATCH p=()-[:ACTED_IN]-() RETURN p LIMIT 25
+
+// View only Person 
+MATCH (p:Person { name: "Tom Hanks"}) RETURN p
+
+// View both Person and Movie without relationship
+MATCH (p:Person)-[:ACTED_IN]-(m:Movie) RETURN p,m LIMIT 25
+
+// Update query 
+MATCH (p:Person {name: "Tom Hanks"}) SET p.YOB = 1957
+
+
