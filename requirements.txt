@@ -1,9 +1,8 @@
 pydantic
-langchain
+langchain >= 0.1.13
 ipykernel
 python-dotenv
-langchain-community
-langchain_community
+langchain-community >= 0.0.20
 pypdf
 bs4
 arxiv
@@ -41,3 +40,4 @@ gradio
 pinecone 
 pinecone-text 
 pinecone-notebooks
+neo4j >= 5.10.0
